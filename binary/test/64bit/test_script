@@ -1,0 +1,10 @@
+#!/bin/sh
+
+while [ "a" ] 
+	 
+do
+	echo "in while loop"
+	./bit_cmd_line_x64 -K
+	sleep 1m
+done
+exit 0 

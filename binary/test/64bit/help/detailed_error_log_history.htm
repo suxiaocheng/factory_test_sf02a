@@ -1,0 +1,92 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<!-- saved from url=(0029)http://www.helpandmanual.com/ -->
+<head><script type="text/javascript" src="helpman_topicinit.js"></script>
+<!-- Redirect browser to frame page if page is not in the content frame. -->
+<script type="text/javascript">
+<!--
+if (top.location.search.lastIndexOf("toc=0")<=0) {
+  if (top.frames.length==0) { top.location.href="index.html?detailed_error_log_history.htm"; }
+  else { parent.quicksync('a9.2'); }
+}
+//-->
+</script>
+<script type="text/javascript" src="highlight.js"></script>
+   <title>Detailed Error log history</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+</head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;" onload="highlight();">
+<div id="hmpopupDiv" style="visibility:hidden; position:absolute; z-index:1000; "></div>
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#649CCC">
+  <tr valign="middle">
+    <td align="left">
+      <p class="p_Heading1"><span class="f_Heading1">Detailed Error log history</span></p>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="overview.htm">Top</a>&nbsp;
+     <a href="test_window_display.htm">Previous</a>&nbsp;
+     <a href="menu_options.htm">Next</a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p><span style="color: #000000;">The detailed error log history can be opened from the </span><span style="color: #000000;">‘</span><span style="color: #000000;">View / Error log file</span><span style="color: #000000;">’</span><span style="color: #000000;"> menu. It contains a record of recent errors and status messages that have occurred during a test run. It is possible to save a copy of this log of recent history using the </span><span style="color: #000000;">‘</span><span style="color: #000000;">File / Save test log</span><span style="color: #000000;">’</span><span style="color: #000000;"> menu item.</span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="color: #000000;">The log can contain up to 1000 messages. After 1000, the oldest messages are overwritten by the newer ones. The log window is updated in real time and can left open while a test run is in progress.</span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="color: #000000;">Each log entry can be divided up into 3 fields.</span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="font-style: italic; color: #000000; text-decoration: underline;">Time stamp</span></p>
+<p><span style="color: #000000;">The time stamp records the time when the event occurred. The format is, YYYY-MM-DD HH:MM:SS</span></p>
+<p><span style="font-style: italic; color: #000000; text-decoration: underline;">&nbsp;</span></p>
+<p><span style="font-style: italic; color: #000000; text-decoration: underline;">Test type</span></p>
+<p><span style="color: #000000;">The test type refers t the name of the test which originated the event. Examples are, “RAM”, Floppy Disk”. The word “Status”, indicated that the event is not an error but just a status message.</span></p>
+<p><span style="font-style: italic; color: #000000; text-decoration: underline;">&nbsp;</span></p>
+<p><span style="font-style: italic; color: #000000; text-decoration: underline;">Error Classification</span></p>
+<p><span style="color: #000000;">Where logging records an error, the severity of this error (CRITICAL, SERIOUS, WARNING or INFORMATION) is logged. Where an informational line (related to this error) follows the error line, the error classification is not repeated (to aid determination of the number of unique errors per classification).</span></p>
+<p><span style="font-style: italic; color: #000000; text-decoration: underline;">&nbsp;</span></p>
+<p><span style="font-style: italic; color: #000000; text-decoration: underline;">Details</span></p>
+<p><span style="color: #000000;">This is a text field that contains additional information about the error (or status message). See Appendix C for a description of the errors that may be encountered. In some cases a log entry may be spread across two lines. The 1</span><span style="color: #000000;">st</span><span style="color: #000000;"> line will contain some general information about the error and the 2</span><span style="color: #000000;">nd</span><span style="color: #000000;"> line will contain more detail.</span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="color: #000000;">Some error messages may contain internal program variables (and thus be fair cryptic). These are not always intended to be interpreted by the user can but help us track down faults in our software.</span></p>
+<p><span style="font-style: italic; color: #000000; text-decoration: underline;">&nbsp;</span></p>
+<p><span style="font-style: italic; color: #000000; text-decoration: underline;">Configuring Error Classifications</span></p>
+<p><span style="color: #000000;">Each of the standard errors detected by BurnInTest can configured to include a customer specific string and error classification. The file BITErrorClassification.txt (in the software directory) contains the error text and classification used by BurnInTest. </span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="color: #000000;">The file is formatted as a Comma Separated File with four fields:</span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 24px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="24"><span style="font-size: 10pt; font-family: 'Times New Roman'; color: #000000;">1.</span></td><td><span style="color: #000000;">Error number </span><span style="color: #000000;">–</span><span style="color: #000000;"> this must not be changed by the customer;</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 24px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="24"><span style="font-size: 10pt; font-family: 'Times New Roman'; color: #000000;">2.</span></td><td><span style="color: #000000;">Error description text </span><span style="color: #000000;">–</span><span style="color: #000000;"> this may be changed. This must be a sting enclosed by quotes;</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 24px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="24"><span style="font-size: 10pt; font-family: 'Times New Roman'; color: #000000;">3.</span></td><td><span style="color: #000000;">Error classification </span><span style="color: #000000;">–</span><span style="color: #000000;"> this may be changed. This must be one of the following text values (not in quotes): </span></td></tr></table></div><p style="text-indent: 24px; margin: 0px 0px 0px 72px;"><span style="color: #000000;">CRITICAL, SERIOUS, WARNING, or INFORMATION </span></p>
+<p style="text-indent: 24px; margin: 0px 0px 0px 72px;"><span style="color: #000000;">A number of errors may be configured to be ignored (not reported as errors), as they may be considered </span><span style="color: #000000;">‘</span><span style="color: #000000;">below the radar</span><span style="color: #000000;">’</span><span style="color: #000000;">. These are configured by setting the Error classification to NONE. These are:</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 120px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="24"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span style="color: #000000;">138,&quot;Warning: Could not lock parallel port&quot;,WARNING,PP</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 120px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="24"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span style="color: #000000;">146,&quot;Frame could not be displayed and was skipped&quot;,INFORMATION,</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 120px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="24"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span style="color: #000000;">182,&quot;Video Playback is dropping samples&quot;,WARNING,</span></td></tr></table></div><p style="margin: 0px 0px 0px 48px;"><span style="color: #000000;">Other errors may not be configured to be ignored in this way.</span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 24px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="24"><span style="font-size: 10pt; font-family: 'Times New Roman'; color: #000000;">1.</span></td><td><span style="color: #000000;">Customer comment </span><span style="color: #000000;">–</span><span style="color: #000000;"> this is optional and may be changed </span><span style="color: #000000;">–</span><span style="color: #000000;"> it is ignored by BurnInTest.</span></td></tr></table></div><p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="color: #000000;">Comment lines may be inserted by using a “#” at the start of the line. These lines will be ignored by BurnInTest.</span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="color: #000000;">An example is shown below:</span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p style="margin: 0px 0px 0px 48px;"><span style="font-size: 8pt; color: #000000;"># PassMark BurnInTest,,,</span></p>
+<p style="margin: 0px 0px 0px 48px;"><span style="font-size: 8pt; color: #000000;"># Error message text and classification,,,</span></p>
+<p style="margin: 0px 0px 0px 48px;"><span style="font-size: 8pt; color: #000000;">0,&quot;No errors&quot;,NONE,</span></p>
+<p style="margin: 0px 0px 0px 48px;"><span style="font-size: 8pt; color: #000000;">1,&quot;Incorrect mathematical addition&quot;,SERIOUS,</span></p>
+<p style="margin: 0px 0px 0px 48px;"><span style="font-size: 8pt; color: #000000;">2,&quot;Incorrect mathematical subtraction&quot;,SERIOUS,</span></p>
+<p style="margin: 0px 0px 0px 48px;"><span style="font-size: 8pt; color: #000000;">3,&quot;Incorrect mathematical division&quot;,SERIOUS,</span></p>
+<p style="margin: 0px 0px 0px 48px;"><span style="font-size: 8pt; color: #000000;">4,&quot;Incorrect mathematical multiply&quot;,SERIOUS,</span></p>
+<p style="text-align: justify;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;"><span style="color: #000000;">&nbsp;</span></p>
+
+</td></tr></table>
+
+</body>
+</html>

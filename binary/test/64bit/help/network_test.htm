@@ -1,0 +1,102 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<!-- saved from url=(0029)http://www.helpandmanual.com/ -->
+<head><script type="text/javascript" src="helpman_topicinit.js"></script>
+<!-- Redirect browser to frame page if page is not in the content frame. -->
+<script type="text/javascript">
+<!--
+if (top.location.search.lastIndexOf("toc=0")<=0) {
+  if (top.frames.length==0) { top.location.href="index.html?network_test.htm"; }
+  else { parent.quicksync('a6.7'); }
+}
+//-->
+</script>
+<script type="text/javascript" src="highlight.js"></script>
+   <title>Network Test</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+</head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;" onload="highlight();">
+<div id="hmpopupDiv" style="visibility:hidden; position:absolute; z-index:1000; "></div>
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#649CCC">
+  <tr valign="middle">
+    <td align="left">
+      <p class="p_Heading1"><span class="f_Heading1">Network Test</span></p>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="overview.htm">Top</a>&nbsp;
+     <a href="memory_test.htm">Previous</a>&nbsp;
+     <a href="parallel_test.htm">Next</a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p><span style="color: #000000;">The Network test tests your networking hardware and software. This is done by sending special ICMP_ECHO message using the Internet Control Message Protocol (ICMP). The ICMP_ECHO message is more commonly known as a </span><span style="color: #000000;">‘</span><span style="color: #000000;">ping</span><span style="color: #000000;">’</span><span style="color: #000000;">. This message is echoed but to your computer by a remote host. This allows the reliability of the network connection to be determined. Up to 6 remote hosts can be selected by setting the Destination Network address in the Test Preferences window (<a href="network_preferences.htm">Network preferences</a>). </span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="color: #000000;">These values are used for the Network test. Each one must be a URL or an IP address (or left blank).</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 24px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>A URL is the name of a network host, eg. <a href="http://www.hostname.com" target="_blank" class="weblink">www.hostname.com</a></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 24px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>An IP address is a sequence of 4 numbers that correspond to a network host. eg. 169.192.0.1</td></tr></table></div><p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="color: #000000;">The host selected must be accessible from the computer and capable of responding to the </span><span style="color: #000000;">‘</span><span style="color: #000000;">ping</span><span style="color: #000000;">’</span><span style="color: #000000;"> command. PassMark recommends the selection of a local host to minimize data link problems, which are fairly common on the Internet. The IP address 127.0.0.1 can also be used for local loop back testing. It should be noted however that the loop back &nbsp;is done in the TCP/IP software and not on the network card, this address cannot be used when the &quot;Test All NICs&quot; option is checked.</span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="color: #000000;">The packet sent to the remote host contains a data payload and a checksum. Every time a packet is echoed from the remote host the checksum is verified and the data payload is compared byte by byte with the data that was sent. Any differences in the payload or an incorrect checksum will result in an error. The data payload is 64 bytes in length.</span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="color: #000000;">The amount of time BurnInTest will spend waiting for a packet can also be set in the Test Preferences window (see section 0, Network preferences).</span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<div class="p_ImageCaption"><div><img src="network_test.png" width="285" height="306" border="0" alt="Network test window" title="Network test window"><p style="text-align:center;width:285px"><span class="f_ImageCaption">Network test window</span></p></div></div>
+<p><span style="font-family: 'Arial'; color: #000000;">&nbsp;</span></p>
+<p><span style="color: #000000;">The meaning of the information displayed in the network test window is given below.</span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="font-style: italic; color: #000000; text-decoration: underline;">NIC (Server)</span></p>
+<p><span style="color: #000000;">The NIC being tested and the address it is sending to and receiving from.</span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="font-style: italic; color: #000000; text-decoration: underline;">Packets Sent</span></p>
+<p><span style="color: #000000;">The number of packets sent to the remote host.</span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="font-style: italic; color: #000000; text-decoration: underline;">Packets Received</span></p>
+<p><span style="color: #000000;">The number of packets received back from the remote host. This should remain at the same level as the Packets Sent counter. If after 2 second a sent packet is not echoed, this causes a timeout error and Packets Sent will be greater than Packets received.</span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="font-style: italic; color: #000000; text-decoration: underline;">Average Delay</span></p>
+<p><span style="color: #000000;">The average round trip time in milliseconds for a packet.</span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="font-style: italic; color: #000000; text-decoration: underline;">Max Delay</span></p>
+<p><span style="color: #000000;">The maximum round trip time in milliseconds for a packet. The maximum values often happen at the very start of the test session. This is because the operating system is still loading and caching the required networking software.</span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="font-style: italic; color: #000000; text-decoration: underline;">Current delay</span></p>
+<p><span style="color: #000000;">The round trip time in milliseconds for the last packet sent.</span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="font-style: italic; color: #000000; text-decoration: underline;">Bytes sent</span></p>
+<p><span style="color: #000000;">The total number of bytes transmitted to the network.</span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="font-style: italic; color: #000000; text-decoration: underline;">Flow rate</span></p>
+<p><span style="color: #000000;">The number of packets being set per second. The duty cycle set for the Network Test determines how many packets are being sent per second.</span></p>
+<p> &nbsp; &nbsp; &nbsp; &nbsp;</p>
+<p><span style="font-style: italic; color: #000000; text-decoration: underline;">Errors</span></p>
+<p><span style="color: #000000;">The number of errors that have been detected and the percentage of packets that had an error are displayed. The definition of what an “error” is can be changed from the Test Preferences window (see section 0, Network preferences). Depending on the settings in the preferences window, the error count can be incremented for every detected error or alternatively it can be set to only increment when the specified error ratio is exceeded.</span></p>
+<p><span style="color: #000000;">When the specified error ratio is exceeded, the ratio is reset to zero to avoid triggering a continuous stream of errors. Thus the ratio value displayed is the ratio of bad errors to good packets since the last time the threshold was crossed.</span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="color: #000000;">For the purposes of detecting a crossing of the threshold and signaling an error, the ratio is ignored until a sufficient number of packets have been sent to make the ratio valid. For example, if the ratio is set to 2%, at least 50 packets must be sent before the ratio is deemed to be valid. If the ratio is set to 0.1%, at least 1000 packets must be sent before the ratio is deemed to be valid.</span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="font-style: italic; color: #000000; text-decoration: underline;">Compatibility issues</span></p>
+<p><span style="color: #000000;">You need to have administrator privileges to run this test.</span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+
+</td></tr></table>
+
+</body>
+</html>

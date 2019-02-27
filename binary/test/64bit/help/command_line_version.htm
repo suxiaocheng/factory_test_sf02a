@@ -1,0 +1,619 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<!-- saved from url=(0029)http://www.helpandmanual.com/ -->
+<head><script type="text/javascript" src="helpman_topicinit.js"></script>
+<!-- Redirect browser to frame page if page is not in the content frame. -->
+<script type="text/javascript">
+<!--
+if (top.location.search.lastIndexOf("toc=0")<=0) {
+  if (top.frames.length==0) { top.location.href="index.html?command_line_version.htm"; }
+  else { parent.quicksync('a13'); }
+}
+//-->
+</script>
+<script type="text/javascript" src="highlight.js"></script>
+   <title>Command Line Version</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Command Line Version,Text based configuration" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+</head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;" onload="highlight();">
+<div id="hmpopupDiv" style="visibility:hidden; position:absolute; z-index:1000; "></div>
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#649CCC">
+  <tr valign="middle">
+    <td align="left">
+      <p class="p_Heading1"><span class="f_Heading1">Command Line Version</span></p>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="overview.htm">Top</a>&nbsp;
+     <a href="command_line_parameters.htm">Previous</a>&nbsp;
+     <a href="contacting_passmark_software.htm">Next</a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="color: #000000;">The command line version of BurnInTest does not have a Graphical User Interface and as such does not require any graphical libraries to be installed but require ncurses to display information. This also means it is missing some of the tests from the GUI version, the 2D and 3D tests, and has a text based config file so it can be edited in a text editor. There is a 32 bit version (bit_cmd_linex32) and a 64 bit version (bit_cmd_linex64) included in the download.</span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="color: #000000;">Use the number keys to navigate to the different test information pages while the tests are running and use Esc to exit BurnInTest.</span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="font-weight: bold; color: #000000;">Notes:</span></p>
+<p><span style="color: #000000;">Due to the limited amount of available space on the network test screen the values for the send and received packets are abbreviated to display as K (thousand), M (million) and B (billion).</span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p class="p_Heading2"><span class="f_Heading2">Text Based Configuration File</span></p>
+<p class="p_Heading2"><span class="f_Heading2">&nbsp;</span></p>
+<p><span style="color: #000000;">The text based configuration file (cmdline_config.txt) can be edited in any text editor. The “#” symbol is used to comment out lines and any lines starting with a “#” will be ignored. &nbsp;Each section of the config file begins with a &lt;SectionName&gt; tag and the valid sections are;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 48px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="24"><span style="font-size: 10pt; font-family: 'StarSymbol'; color: #000000;">-</span></td><td><span style="color: #000000;">&lt;Logging&gt;</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 48px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="24"><span style="font-size: 10pt; font-family: 'StarSymbol'; color: #000000;">-</span></td><td><span style="color: #000000;">&lt;Notes&gt;</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 48px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="24"><span style="font-size: 10pt; font-family: 'StarSymbol'; color: #000000;">-</span></td><td><span style="color: #000000;">&lt;DutyCycles&gt;</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 48px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="24"><span style="font-size: 10pt; font-family: 'StarSymbol'; color: #000000;">-</span></td><td><span style="color: #000000;">&lt;Memory&gt;</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 48px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="24"><span style="font-size: 10pt; font-family: 'StarSymbol'; color: #000000;">-</span></td><td><span style="color: #000000;">&lt;Disk&gt;</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 48px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="24"><span style="font-size: 10pt; font-family: 'StarSymbol'; color: #000000;">-</span></td><td><span style="color: #000000;">&lt;CPU&gt;</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 48px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="24"><span style="font-size: 10pt; font-family: 'StarSymbol'; color: #000000;">-</span></td><td><span style="color: #000000;">&lt;USB&gt;</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 48px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="24"><span style="font-size: 10pt; font-family: 'StarSymbol'; color: #000000;">-</span></td><td><span style="color: #000000;">&lt;Network&gt;</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 48px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="24"><span style="font-size: 10pt; font-family: 'StarSymbol'; color: #000000;">-</span></td><td><span style="color: #000000;">&lt;CDRWDVD&gt;</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 48px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="24"><span style="font-size: 10pt; font-family: 'StarSymbol'; color: #000000;">-</span></td><td><span style="color: #000000;">&lt;Serial&gt;</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 48px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="24"><span style="font-size: 10pt; font-family: 'StarSymbol'; color: #000000;">-</span></td><td><span style="color: #000000;">&lt;Parallel&gt;</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 48px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="24"><span style="font-size: 10pt; font-family: 'StarSymbol'; color: #000000;">-</span></td><td><span style="color: #000000;">&lt;Errors&gt;</span></td></tr></table></div><p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="color: #000000;">For sections that can have multiple tests (eg Disk, Serial) a &lt;Test&gt; tag is used to add a new device and &lt;/Test&gt; used to signify the close of that particular section. The default config file is commented with expected values for each section.</span></p>
+<p class="p_Heading2"><span class="f_Heading2">&nbsp;</span></p>
+<p><span style="font-weight: bold;">Logging Section</span></p>
+<p><span style="font-weight: bold;">&nbsp;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table cellspacing="0" cellpadding="0" border="0" style="border: none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="113" style="width:113px;"><p><span style="font-weight: bold;">Flag </span></p>
+</td>
+<td valign="top" width="224" style="width:224px;"><p><span style="font-weight: bold; color: #000000;">Meaning</span></p>
+</td>
+<td valign="top" width="325" style="width:325px;"><p><span style="font-weight: bold; color: #000000;">Valid Keywords / Range</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="113" style="width:113px;"><p>LogFilename</p>
+</td>
+<td valign="top" width="224" style="width:224px;"><p><span style="color: #000000;">Location (path) of log file</span></p>
+</td>
+<td valign="top" width="325" style="width:325px;"><p><span style="color: #000000;">Valid path to place log file</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="113" style="width:113px;"><p><span style="color: #000000;">LogPrefix </span></p>
+</td>
+<td valign="top" width="224" style="width:224px;"><p><span style="color: #000000;">String to prefix to log name</span></p>
+</td>
+<td valign="top" width="325" style="width:325px;"><p><span style="color: #000000;">Text string </span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="113" style="width:113px;"><p><span style="color: #000000;">Format </span></p>
+</td>
+<td valign="top" width="224" style="width:224px;"><p><span style="color: #000000;">Format of log </span></p>
+</td>
+<td valign="top" width="325" style="width:325px;"><p><span style="color: #000000;">Ascii, HTML </span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="113" style="width:113px;"><p><span style="color: #000000;">LogDetailLevel </span></p>
+</td>
+<td valign="top" width="224" style="width:224px;"><p><span style="color: #000000;">Detail level of information logged</span></p>
+</td>
+<td valign="top" width="325" style="width:325px;"><p><span style="color: #000000;">summary, normal</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="113" style="width:113px;"><p><span style="color: #000000;">TraceLevel </span></p>
+</td>
+<td valign="top" width="224" style="width:224px;"><p><span style="color: #000000;">Trace level of information logged</span></p>
+</td>
+<td valign="top" width="325" style="width:325px;"><p><span style="color: #000000;">0, 1, 2</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="113" style="width:113px;"><p><span style="color: #000000;">MaxFileLines </span></p>
+</td>
+<td valign="top" width="224" style="width:224px;"><p><span style="color: #000000;">Max file lines per log</span></p>
+</td>
+<td valign="top" width="325" style="width:325px;"><p><span style="color: #000000;">100 - 10000</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="113" style="width:113px;"><p><span style="color: #000000;">LogMode </span></p>
+</td>
+<td valign="top" width="224" style="width:224px;"><p><span style="color: #000000;">Logging mode, single/multiple files</span></p>
+</td>
+<td valign="top" width="325" style="width:325px;"><p><span style="color: #000000;">ClearAppend , AccumulateAppend , ClearNew , Timestamp  </span></p>
+</td>
+</tr>
+</table>
+</div>
+<p>  </p>
+<p><span style="font-weight: bold;">Notes Section</span></p>
+<p>&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table cellspacing="0" cellpadding="0" border="0" style="border: none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="112" style="width:112px;"><p><span style="font-weight: bold;">Flag</span></p>
+</td>
+<td valign="top" width="223" style="width:223px;"><p><span style="font-weight: bold; color: #000000;">Meaning</span></p>
+</td>
+<td valign="top" width="329" style="width:329px;"><p><span style="font-weight: bold; color: #000000;">Valid Keywords / Range</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="112" style="width:112px;"><p><span style="color: #000000;">MachineType</span></p>
+</td>
+<td valign="top" width="223" style="width:223px;"><p><span style="color: #000000;">One line description of the machine type</span></p>
+</td>
+<td valign="top" width="329" style="width:329px;"><p><span style="color: #000000;"> Text string</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="112" style="width:112px;"><p><span style="color: #000000;">MachineSerial</span></p>
+</td>
+<td valign="top" width="223" style="width:223px;"><p><span style="color: #000000;">Custom serial No. for this machine</span></p>
+</td>
+<td valign="top" width="329" style="width:329px;"><p><span style="color: #000000;">Text string</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="112" style="width:112px;"><p><span style="color: #000000;">Notes</span></p>
+</td>
+<td valign="top" width="223" style="width:223px;"><p><span style="color: #000000;">One line description of extra notes</span></p>
+</td>
+<td valign="top" width="329" style="width:329px;"><p><span style="color: #000000;">Text string</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p>&nbsp;</p>
+<p><span style="font-weight: bold; color: #000000;">DutyCycles Section</span></p>
+<p>&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table cellspacing="0" cellpadding="0" border="0" style="border: none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="112" style="width:112px;"><p><span style="font-weight: bold;">Flag</span></p>
+</td>
+<td valign="top" width="223" style="width:223px;"><p><span style="font-weight: bold; color: #000000;">Meaning</span></p>
+</td>
+<td valign="top" width="329" style="width:329px;"><p><span style="font-weight: bold; color: #000000;">Valid Keywords / Range</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="112" style="width:112px;"><p><span style="color: #000000;">AutoStopMinutes </span></p>
+</td>
+<td valign="top" width="223" style="width:223px;"><p><span style="color: #000000;">Auto stop after specified minutes</span></p>
+</td>
+<td valign="top" width="329" style="width:329px;"><p><span style="color: #000000;">0+ (0 for run forever)</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="112" style="width:112px;"><p><span style="color: #000000;">AutoStopCycles </span></p>
+</td>
+<td valign="top" width="223" style="width:223px;"><p><span style="color: #000000;">Auto stop after specified cycles</span></p>
+</td>
+<td valign="top" width="329" style="width:329px;"><p><span style="color: #000000;">0+ (0 for run forever)</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="112" style="width:112px;"><p><span style="color: #000000;">CPU </span></p>
+</td>
+<td valign="top" width="223" style="width:223px;"><p><span style="color: #000000;">Duty cycle load</span></p>
+</td>
+<td valign="top" width="329" style="width:329px;"><p><span style="color: #000000;">1-100</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="112" style="width:112px;"><p><span style="color: #000000;">CDDVD </span></p>
+</td>
+<td valign="top" width="223" style="width:223px;"><p><span style="color: #000000;">Duty cycle load</span></p>
+</td>
+<td valign="top" width="329" style="width:329px;"><p><span style="color: #000000;">1-100</span></p>
+</td>
+</tr>
+<tr style="text-align:left;">
+<td width="112" style="width:112px;"><p><span style="color: #000000;">Memory </span></p>
+</td>
+<td width="112" style="width:112px;"><p><span style="color: #000000;">Duty cycle load</span></p>
+</td>
+<td width="112" style="width:112px;"><p><span style="color: #000000;">1-100</span></p>
+</td>
+</tr>
+<tr style="text-align:left;">
+<td width="112" style="width:112px;"><p><span style="color: #000000;">Serial </span></p>
+</td>
+<td width="112" style="width:112px;"><p><span style="color: #000000;">Duty cycle load</span></p>
+</td>
+<td width="112" style="width:112px;"><p><span style="color: #000000;">1-100</span></p>
+</td>
+</tr>
+<tr style="text-align:left;">
+<td width="112" style="width:112px;"><p><span style="color: #000000;">Parallel </span></p>
+</td>
+<td width="112" style="width:112px;"><p><span style="color: #000000;">Duty cycle load</span></p>
+</td>
+<td width="112" style="width:112px;"><p><span style="color: #000000;">1-100</span></p>
+</td>
+</tr>
+<tr style="text-align:left;">
+<td width="112" style="width:112px;"><p><span style="color: #000000;">Disk </span></p>
+</td>
+<td width="112" style="width:112px;"><p><span style="color: #000000;">Duty cycle load</span></p>
+</td>
+<td width="112" style="width:112px;"><p><span style="color: #000000;">1-100</span></p>
+</td>
+</tr>
+<tr style="text-align:left;">
+<td width="112" style="width:112px;"><p><span style="color: #000000;">Network </span></p>
+</td>
+<td width="112" style="width:112px;"><p><span style="color: #000000;">Duty cycle load</span></p>
+</td>
+<td width="112" style="width:112px;"><p><span style="color: #000000;">1-100</span></p>
+</td>
+</tr>
+<tr style="text-align:left;">
+<td width="112" style="width:112px;"><p><span style="color: #000000;">USB </span></p>
+</td>
+<td width="112" style="width:112px;"><p><span style="color: #000000;">Duty cycle load</span></p>
+</td>
+<td width="112" style="width:112px;"><p><span style="color: #000000;">1-100</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p>&nbsp;</p>
+<p><span style="font-weight: bold;">Memory Section</span></p>
+<p><span style="font-weight: bold;">&nbsp;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table cellspacing="0" cellpadding="0" border="0" style="border: none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="112" style="width:112px;"><p><span style="font-weight: bold;">Flag</span></p>
+</td>
+<td valign="top" width="223" style="width:223px;"><p><span style="font-weight: bold; color: #000000;">Meaning</span></p>
+</td>
+<td valign="top" width="329" style="width:329px;"><p><span style="font-weight: bold; color: #000000;">Valid Keywords / Range</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="112" style="width:112px;"><p><span style="color: #000000;">TestMemory</span></p>
+</td>
+<td valign="top" width="223" style="width:223px;"><p><span style="color: #000000;">Enable the memory test</span></p>
+</td>
+<td valign="top" width="329" style="width:329px;"><p><span style="color: #000000;">N/A</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p><span style="font-weight: bold;">&nbsp;</span></p>
+<p><span style="font-weight: bold;">Disk Section</span></p>
+<p><span style="font-weight: bold;">&nbsp;</span></p>
+<p>Each partition being tested and it's related parameters should be enclosed in a &lt;Test&gt;...&lt;/Test&gt; section</p>
+<p>For partitioned drives they must be mounted before BurnInTest can test them, they also need to be of partition type ext2, ext3, reiserfs, xfs, vfat or ntfs. Due to limited NTFS support in some Linux distributions you may need to use a non-default type (eg ntfs-3g) to mount NTFS drives with read + write permissions before you can test them.</p>
+<p><span style="font-weight: bold;">&nbsp;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table cellspacing="0" cellpadding="0" border="0" style="border: none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="113" style="width:113px;"><p><span style="font-weight: bold;">Flag </span></p>
+</td>
+<td valign="top" width="221" style="width:221px;"><p><span style="font-weight: bold; color: #000000;">Meaning</span></p>
+</td>
+<td valign="top" width="463" style="width:463px;"><p><span style="font-weight: bold; color: #000000;">Valid Keywords / Range</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="113" style="width:113px;"><p>Device </p>
+</td>
+<td valign="top" width="221" style="width:221px;"><p><span style="color: #000000;">The device or partition to be tested</span></p>
+</td>
+<td valign="top" width="463" style="width:463px;"><p><span style="color: #000000;">Valid partition eg /dev/sdb2 &nbsp;or raw un-partitioned device /dev/sdc</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="113" style="width:113px;"><p><span style="color: #000000;">TestMode </span></p>
+</td>
+<td valign="top" width="221" style="width:221px;"><p><span style="color: #000000;">The test pattern</span></p>
+</td>
+<td valign="top" width="463" style="width:463px;"><p><span style="color: #000000;">Cyclic, Sequential, HighLow, Binary1, Binary2, Zeros, Ones, Random, RandomSeeking</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="113" style="width:113px;"><p><span style="color: #000000;">FileSize </span></p>
+</td>
+<td valign="top" width="221" style="width:221px;"><p><span style="color: #000000;">File size as % of disk space</span></p>
+</td>
+<td valign="top" width="463" style="width:463px;"><p><span style="color: #000000;">1-15</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="113" style="width:113px;"><p><span style="color: #000000;">DutyCycleOverride </span></p>
+</td>
+<td valign="top" width="221" style="width:221px;"><p><span style="color: #000000;">Duty cycle override</span></p>
+</td>
+<td valign="top" width="463" style="width:463px;"><p><span style="color: #000000;">0 - 100</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="113" style="width:113px;"><p><span style="color: #000000;">SeekCount </span></p>
+</td>
+<td valign="top" width="221" style="width:221px;"><p><span style="color: #000000;">Seek count </span></p>
+</td>
+<td valign="top" width="463" style="width:463px;"><p><span style="color: #000000;">0-10000</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p><span style="font-weight: bold;">&nbsp;</span></p>
+<p><span style="font-weight: bold;">CPU Section</span></p>
+<p><span style="font-weight: bold;">&nbsp;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table cellspacing="0" cellpadding="0" border="0" style="border: none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="112" style="width:112px;"><p><span style="font-weight: bold;">Flag</span></p>
+</td>
+<td valign="top" width="223" style="width:223px;"><p><span style="font-weight: bold; color: #000000;">Meaning</span></p>
+</td>
+<td valign="top" width="329" style="width:329px;"><p><span style="font-weight: bold; color: #000000;">Valid Keywords / Range</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="112" style="width:112px;"><p><span style="color: #000000;">MathIntTest</span></p>
+</td>
+<td valign="top" width="223" style="width:223px;"><p><span style="color: #000000;">Enable the math integer tests</span></p>
+</td>
+<td valign="top" width="329" style="width:329px;"><p><span style="color: #000000;">N/A</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="112" style="width:112px; height:4px;"><p><span style="color: #000000;">MathFloatTest</span></p>
+</td>
+<td valign="top" width="223" style="width:223px; height:4px;"><p><span style="color: #000000;">Enable the math floating point tests</span></p>
+</td>
+<td valign="top" width="329" style="width:329px; height:4px;"><p><span style="color: #000000;">N/A</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p><span style="font-weight: bold;">&nbsp;</span></p>
+<p><span style="font-weight: bold;">Network Section</span></p>
+<p><span style="font-weight: bold;">&nbsp;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table cellspacing="0" cellpadding="0" border="0" style="border: none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="112" style="width:112px;"><p><span style="font-weight: bold;">Flag</span></p>
+</td>
+<td valign="top" width="227" style="width:227px;"><p><span style="font-weight: bold; color: #000000;">Meaning</span></p>
+</td>
+<td valign="top" width="454" style="width:454px;"><p><span style="font-weight: bold; color: #000000;">Valid Keywords / Range</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="112" style="width:112px;"><p><span style="color: #000000;">IP</span></p>
+</td>
+<td valign="top" width="227" style="width:227px;"><p><span style="color: #000000;">IP to test, one IP flag for each test, up to 6</span></p>
+</td>
+<td valign="top" width="454" style="width:454px;"><p><span style="color: #000000;">Valid IP or 127.0.0.1</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="112" style="width:112px; height:4px;"><p><span style="color: #000000;">BadPacketRatio </span></p>
+</td>
+<td valign="top" width="227" style="width:227px; height:4px;"><p><span style="color: #000000;">Ratio between good and bad packets before an error is logged</span></p>
+</td>
+<td valign="top" width="454" style="width:454px; height:4px;"><p><span style="color: #000000;">0-99, &nbsp;set to 0 for every bad packet to generate an error.</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="112" style="width:112px; height:4px;"><p><span style="color: #000000;">TimeOut </span></p>
+</td>
+<td valign="top" width="227" style="width:227px; height:4px;"><p><span style="color: #000000;">Timeout in milliseconds</span></p>
+</td>
+<td valign="top" width="454" style="width:454px; height:4px;"><p><span style="color: #000000;">100 - 200000</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="112" style="width:112px; height:4px;"><p><span style="color: #000000;">TestAllNICs</span></p>
+</td>
+<td valign="top" width="227" style="width:227px; height:4px;"><p><span style="color: #000000;">Bind each IP to a different NIC</span></p>
+</td>
+<td valign="top" width="454" style="width:454px; height:4px;"><p><span style="color: #000000;">N/A</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p><span style="font-weight: bold;">&nbsp;</span></p>
+<p><span style="font-weight: bold;">CD-DVD Section</span></p>
+<p><span style="font-weight: bold;">&nbsp;</span></p>
+<p>Each CD/DVD device being tested and it's related parameters should be enclosed in a &lt;Test&gt;...&lt;/Test&gt; section</p>
+<p><span style="font-weight: bold;">&nbsp;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table cellspacing="0" cellpadding="0" border="0" style="border: none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="112" style="width:112px;"><p><span style="font-weight: bold;">Flag</span></p>
+</td>
+<td valign="top" width="229" style="width:229px;"><p><span style="font-weight: bold; color: #000000;">Meaning</span></p>
+</td>
+<td valign="top" width="452" style="width:452px;"><p><span style="font-weight: bold; color: #000000;">Valid Keywords / Range</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="112" style="width:112px;"><p><span style="color: #000000;">Device </span></p>
+</td>
+<td valign="top" width="229" style="width:229px;"><p><span style="color: #000000;">Device to test</span></p>
+</td>
+<td valign="top" width="452" style="width:452px;"><p><span style="color: #000000;">Valid CD/DVD device </span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="112" style="width:112px; height:4px;"><p><span style="color: #000000;">TestMode </span></p>
+</td>
+<td valign="top" width="229" style="width:229px; height:4px;"><p><span style="color: #000000;">Test to run </span></p>
+</td>
+<td valign="top" width="452" style="width:452px; height:4px;"><p><span style="color: #000000;">Music, Data, Passmark, No</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="112" style="width:112px; height:4px;"><p><span style="color: #000000;"> Seek </span></p>
+</td>
+<td valign="top" width="229" style="width:229px; height:4px;"><p><span style="color: #000000;">Additional seek (Passmark test mode only)</span></p>
+</td>
+<td valign="top" width="452" style="width:452px; height:4px;"><p><span style="color: #000000;">0-1000</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p><span style="font-weight: bold;">&nbsp;</span></p>
+<p><span style="font-weight: bold;">Serial Section</span></p>
+<p><span style="font-weight: bold;">&nbsp;</span></p>
+<p>Each serial device being tested and it's test mode should be enclosed in a &lt;Test&gt;...&lt;/Test&gt; section</p>
+<p><span style="font-weight: bold;">&nbsp;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table cellspacing="0" cellpadding="0" border="0" style="border: none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="112" style="width:112px;"><p><span style="font-weight: bold;">Flag</span></p>
+</td>
+<td valign="top" width="235" style="width:235px;"><p><span style="font-weight: bold; color: #000000;">Meaning</span></p>
+</td>
+<td valign="top" width="386" style="width:386px;"><p><span style="font-weight: bold; color: #000000;">Valid Keywords / Range</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="112" style="width:112px;"><p><span style="color: #000000;">Device </span></p>
+</td>
+<td valign="top" width="235" style="width:235px;"><p><span style="color: #000000;">Device to test</span></p>
+</td>
+<td valign="top" width="386" style="width:386px;"><p><span style="color: #000000;">ttys0 - ttys63</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="112" style="width:112px; height:4px;"><p><span style="color: #000000;">TestMode </span></p>
+</td>
+<td valign="top" width="235" style="width:235px; height:4px;"><p><span style="color: #000000;">Test mode for device</span></p>
+</td>
+<td valign="top" width="386" style="width:386px; height:4px;"><p><span style="color: #000000;">Loopback, Detect</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p><span style="font-weight: bold;">&nbsp;</span></p>
+<p>These parameters are only set once for the Serial section and apply to all serial tests</p>
+<p>&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table cellspacing="0" cellpadding="0" border="0" style="border: none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="112" style="width:112px; height:4px;"><p><span style="color: #000000;">DisableRTS</span></p>
+</td>
+<td valign="top" width="236" style="width:236px; height:4px;"><p><span style="color: #000000;">When specified disables RTS/CTS and DSR/DTR</span></p>
+</td>
+<td valign="top" width="385" style="width:385px; height:4px;"><p><span style="color: #000000;">N/A</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="112" style="width:112px; height:4px;"><p><span style="color: #000000;">SendReceive</span></p>
+</td>
+<td valign="top" width="236" style="width:236px; height:4px;"><p><span style="color: #000000;">Send/Receive timeout value in milliseconds</span></p>
+</td>
+<td valign="top" width="385" style="width:385px; height:4px;"><p><span style="color: #000000;">100-3000</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="112" style="width:112px; height:4px;"><p><span style="color: #000000;">BaudRate</span></p>
+</td>
+<td valign="top" width="236" style="width:236px; height:4px;"><p><span style="color: #000000;">Baud rate to set for test</span></p>
+</td>
+<td valign="top" width="385" style="width:385px; height:4px;"><p><span style="color: #000000;">110, 300, 600, 1200, 2400, 4800, 9600, 19200, 38400, 57600, 115200, 230400, Cycle115 (cycle to 115200), Cycle230 (cycle to 230400)</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p><span style="font-weight: bold;">&nbsp;</span></p>
+<p><span style="font-weight: bold;">Parallel Section</span></p>
+<p><span style="font-weight: bold;">&nbsp;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table cellspacing="0" cellpadding="0" border="0" style="border: none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="112" style="width:112px;"><p><span style="font-weight: bold;">Flag</span></p>
+</td>
+<td valign="top" width="235" style="width:235px;"><p><span style="font-weight: bold; color: #000000;">Meaning</span></p>
+</td>
+<td valign="top" width="386" style="width:386px;"><p><span style="font-weight: bold; color: #000000;">Valid Keywords / Range</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="112" style="width:112px;"><p><span style="color: #000000;">Device </span></p>
+</td>
+<td valign="top" width="235" style="width:235px;"><p><span style="color: #000000;">Device to test</span></p>
+</td>
+<td valign="top" width="386" style="width:386px;"><p><span style="color: #000000;">valid parallel port lp0, lp1 etc</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="112" style="width:112px; height:4px;"><p><span style="color: #000000;">TestMode </span></p>
+</td>
+<td valign="top" width="235" style="width:235px; height:4px;"><p><span style="color: #000000;">Test mode for device</span></p>
+</td>
+<td valign="top" width="386" style="width:386px; height:4px;"><p><span style="color: #000000;">Loopback, Detect</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p><span style="font-weight: bold;">&nbsp;</span></p>
+<p><span style="font-weight: bold;">USB Section</span></p>
+<p><span style="font-weight: bold;">&nbsp;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table cellspacing="0" cellpadding="0" border="0" style="border: none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="112" style="width:112px;"><p><span style="font-weight: bold;">Flag</span></p>
+</td>
+<td valign="top" width="235" style="width:235px;"><p><span style="font-weight: bold; color: #000000;">Meaning</span></p>
+</td>
+<td valign="top" width="386" style="width:386px;"><p><span style="font-weight: bold; color: #000000;">Valid Keywords / Range</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="112" style="width:112px;"><p><span style="color: #000000;">NumUSB &nbsp; </span></p>
+</td>
+<td valign="top" width="235" style="width:235px;"><p><span style="color: #000000;">Max number of USB devices to test</span></p>
+</td>
+<td valign="top" width="386" style="width:386px;"><p><span style="color: #000000;">1-10</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p><span style="font-weight: bold;">&nbsp;</span></p>
+<p><span style="font-weight: bold;">Error Section</span></p>
+<p><span style="font-weight: bold;">&nbsp;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table cellspacing="0" cellpadding="0" border="0" style="border: none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="112" style="width:112px;"><p><span style="font-weight: bold;">Flag</span></p>
+</td>
+<td valign="top" width="235" style="width:235px;"><p><span style="font-weight: bold; color: #000000;">Meaning</span></p>
+</td>
+<td valign="top" width="386" style="width:386px;"><p><span style="font-weight: bold; color: #000000;">Valid Keywords / Range</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="112" style="width:112px;"><p><span style="color: #000000;">ActionOnError &nbsp;  </span></p>
+</td>
+<td valign="top" width="235" style="width:235px;"><p><span style="color: #000000;">Action to take on error</span></p>
+</td>
+<td valign="top" width="386" style="width:386px;"><p><span style="color: #000000;">Continue, Beep, Stop</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p><span style="font-weight: bold;">&nbsp;</span></p>
+<p class="p_Heading2"><span class="f_Heading2">Command Line Parameters</span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="color: #000000;">-C configname</span></p>
+<p><span style="color: #000000;">BurnInTest will load the config file specified.</span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="color: #000000;">-x</span></p>
+<p><span style="color: #000000;">Don</span><span style="color: #000000;">’</span><span style="color: #000000;">t automatically exit BurnInTest after tests have finished, the default behavior is BurnInTest will exit once the test run has finished.</span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="color: #000000;">-k </span></p>
+<p><span style="color: #000000;">Register your key stored in the key.dat. When using this flag BurnInTest will expect your username/key, from (and including) the &quot;-----START_OF_KEY-----&quot; to (and including) the &quot;------END_OF_KEY------&quot; flags, to be stored in a file called key.dat in the same directory as BurnInTest. You should paste the key as is, it should be 6 separate lines, 1 each for the start and end flags, 1 for the username and 3 for the key. &nbsp; You will need to restart BurnInTest after registration and you can delete the key.dat file you have created. </span><span style="font-weight: bold; color: #000000;">Do not alter the savedkey.dat file, this is a file maintained by BurnInTest and altering this file will corrupt it. </span></p>
+<p style="text-align: justify;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;"><span style="color: #000000;"> -D duration</span></p>
+<p style="text-align: justify;"><span style="color: #000000;">Sets the test duration to the value specified &nbsp;in minutes</span></p>
+<p style="text-align: justify;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;"><span style="color: #000000;"> -X duration </span><br>
+<span style="color: #000000;">Sets the test duration to the value specified &nbsp;in cycles</span></p>
+<p style="text-align: justify;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;"><span style="color: #000000;">-d </span></p>
+<p style="text-align: justify;"><span style="color: #000000;">Enables debug mode which will create a debug.log file in the same directory as the BurnInTest executable</span></p>
+<p style="text-align: justify;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;"><span style="color: #000000;">-p time</span></p>
+<p style="text-align: justify;"><span style="color: #000000;">Sets the update interval (time between display updates) in milliseconds, allowable range 500 ( .5 second) to 300,000 (5 minutes). </span></p>
+<p style="text-align: justify;"><span style="color: #000000;">&nbsp;</span></p>
+
+</td></tr></table>
+
+</body>
+</html>

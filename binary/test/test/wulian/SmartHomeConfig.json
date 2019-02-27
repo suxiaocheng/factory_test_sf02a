@@ -1,0 +1,9 @@
+{
+        "gwinfo":{
+                "option":{
+                        "gwid":"112233445566",
+                        "gwip":"127.0.0.1",
+                        "gwuart":"/dev/ttyS0"
+                }
+        }
+}

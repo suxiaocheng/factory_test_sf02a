@@ -1,0 +1,9 @@
+# ignore the binary file
+*.o
+factory_test
+
+#ignore tmp directory
+tmp/
+*~
+*.bak
+

@@ -1,0 +1,18 @@
+使用说明：
+1. 外部程序调用需包含 factory_test.c, factory_test.h, binary\ 两个文件加一个文件夹
+	a. factory_test.c 所有函数的实现
+	b. factory_test.h 所有函数实现的说明，怎么调用参考这个
+	c. 文峰提供的一整包的脚本，需要放置在应用执行程序的目录下， factory_test.c会使用system命令去调用这个目录下面的文件。
+	
+2. 其它文件说明：
+	.
+	├── binary						
+	│   └── test				// 文峰提供的脚本文件
+	├── debug.h					// main.c 使用的调试宏头文件
+	├── factory_test			// 可执行程序。如果需要测试可以用这个
+	├── factory_test.c			// 所有函数的实现
+	├── factory_test.h			// 所有函数实现的说明，参考这个
+	├── main.c					// 测试程序
+	├── Makefile				// 编译生成文件
+	└── README					// 当前说明文档
+

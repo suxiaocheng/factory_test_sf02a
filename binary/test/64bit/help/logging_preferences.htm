@@ -1,0 +1,84 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<!-- saved from url=(0029)http://www.helpandmanual.com/ -->
+<head><script type="text/javascript" src="helpman_topicinit.js"></script>
+<!-- Redirect browser to frame page if page is not in the content frame. -->
+<script type="text/javascript">
+<!--
+if (top.location.search.lastIndexOf("toc=0")<=0) {
+  if (top.frames.length==0) { top.location.href="index.html?logging_preferences.htm"; }
+  else { parent.quicksync('a7.11'); }
+}
+//-->
+</script>
+<script type="text/javascript" src="highlight.js"></script>
+   <title>Logging Preferences</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+</head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;" onload="highlight();">
+<div id="hmpopupDiv" style="visibility:hidden; position:absolute; z-index:1000; "></div>
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#649CCC">
+  <tr valign="middle">
+    <td align="left">
+      <p class="p_Heading1"><span class="f_Heading1">Logging Preferences</span></p>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="overview.htm">Top</a>&nbsp;
+     <a href="error_handling_preferences.htm">Previous</a>&nbsp;
+     <a href="duty_cycles.htm">Next</a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p><span style="font-style: italic; color: #000000; text-decoration: underline;">Logging to the Detailed Error log history </span></p>
+<p><span style="color: #000000;">Errors are automatically logged to the Detailed Error log history. This log is viewed using “View”, ”Error Log File”. This type of logging is not affected by the “Logging on” option, which refers to automatic disk logging.</span></p>
+<p><span style="color: #000000;">Note: Text and HTML disk logs can be manually created using “File”, &quot;Save test log”. This will save System information, a result summary and the recent Detailed Error log history (up to 1000 entries).</span></p>
+<p><span style="font-style: italic; color: #000000; text-decoration: underline;">&nbsp;</span></p>
+<p><span style="font-style: italic; color: #000000; text-decoration: underline;">Automatic disk logging</span></p>
+<p><span style="color: #000000;">Logging to disk is switched on and off with the “Logging on” option. When disk logging is on, BurnInTest will log System information, results, result summaries, and detailed error descriptions to files based on the following user settings.</span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="color: #000000;">The log directory allows the directory and filename prefix to be specified. The file will automatically be appended with _YYMMDD_HHMMSS.log, .htm or .trace, specifying the Year, Month, Day, Hour, Minute &amp; second that the disk log file was created. </span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="color: #000000;">A “Log detail level” may be selected for disk logging to specify the amount of information to be written to disk. The options that may be selected are:</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 8px 24px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="24"><span style="font-size: 10pt; font-family: 'Times New Roman'; color: #000000;">1.</span></td><td><span style="color: #000000;">Result Summary only. Produces a .log or .htm file containing system information, a summary of the tests run (eg. Which tests, the number of operations and errors per test) and a summary of the serious and critical errors during a test run (cleared at the end of a non-scripted test run or at the end of the script for a scripted test run).</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 24px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="24"><span style="font-size: 10pt; font-family: 'Times New Roman'; color: #000000;">2.</span></td><td><span style="color: #000000;">Normal. Produces a .log or .htm file containing the “Result Summary only” information and detailed errors (1 or 2 lines per error). </span></td></tr></table></div><p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="color: #000000;">A “Trace level” may be selected for detailed disk logging to specify the amount of information to be written to disk. The options that may be selected are:</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 24px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="24"><span style="font-size: 10pt; font-family: 'Times New Roman'; color: #000000;">1.</span></td><td><span style="color: #000000;">No Trace log. No trace log is produced. &nbsp;This is the default setting.</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 24px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="24"><span style="font-size: 10pt; font-family: 'Times New Roman'; color: #000000;">2.</span></td><td><span style="color: #000000;">Activity Trace level 1. Produces a .trace with the “Normal” information and a summary of test activities (eg. The starting and stopping of tests).</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 24px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="24"><span style="font-size: 10pt; font-family: 'Times New Roman'; color: #000000;">3.</span></td><td><span style="color: #000000;">Activity trace level 2. Produces a .trace file with the “Activity Trace level 1” information and a detailed description of the test activity.</span></td></tr></table></div><p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="color: #000000;">Setting “Max file size” specifies the approximate maximum file size in terms of the number of lines in either the log or trace files.</span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="color: #000000;">The format of the Result summary and Normal log files may be specified to be either ASCII text or HTML via the “ACSII Format” or “HTML Format” buttons. Trace logs are always in ASCII text.</span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="color: #000000;">A new set of log files will be created when Logging On is switched on, any of the logging options (Log Directory, Detail Level, ASCII/HTML Format) are changed, or when BurnInTest is started with Logging switched on. The only exception is when BurnInTest is automatically stopped with a REBOOT or REBOOTEND scripting command, and then the original log files will be re-opened and appended to.</span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="color: #000000;">The log files are closed and available for use by another application when Logging On is switched off, any of the logging options (Log Directory, Detail Level, ASCII/HTML Format) are changed, or when BurnInTest is exited or automatically stopped with a REBOOT or REBOOTEND scripting command.</span></p>
+<p><span style="font-style: italic; color: #000000; text-decoration: underline;">&nbsp;</span></p>
+<p><span style="font-style: italic; color: #000000; text-decoration: underline;">Log Name Prefixing (Text/HTML)</span></p>
+<p><span style="color: #000000;">If you wish to prefix the standard BurnInTest Text or HTML log filenames you can type a prefix string into the “Prefix” edit box. For example, if you want to prefix the standard BurnInTest log filenames with the text “SPECIAL_TEST_” then just enter, </span></p>
+<p style="margin: 0px 0px 0px 48px;"><span style="font-size: 8pt; color: #000000;">SPECIAL_TEST_</span></p>
+<p><span style="font-style: italic; color: #000000; text-decoration: underline;">&nbsp;</span></p>
+<p><span style="font-style: italic; color: #000000; text-decoration: underline;">Log Clearing</span></p>
+<p><span style="color: #000000;">Two options are available for clearing log files and result files. Logs can either be cleared each time a new test run is started or results can be accumulated across several test runs. The accumulate option is useful when doing reboot testing. Once the accumulate option has been set the only way result and log files can be cleared is with the </span><span style="color: #000000;">‘</span><span style="color: #000000;">Edit / Clear All Results</span><span style="color: #000000;">’</span><span style="color: #000000;"> menu item.</span></p>
+<p><span style="color: #000000;">Having the accumulate option set means that the error count, cycle count and operations count values are the total values that have been accumulated across all test runs on this machine. </span></p>
+<p><span style="color: #000000;">Accumulation will also occur across scripted reboots, sleeps and execute commands.</span></p>
+<p><span style="color: #000000;">Note: Regardless of the configuration settings, the </span><span style="font-style: italic; color: #000000;">detailed error and status log</span><span style="color: #000000;"> history is maintained at a maximum of 1000 lines, with the oldest data cleared if this size is exceeded.</span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p><span style="font-style: italic; color: #000000; text-decoration: underline;">See also</span></p>
+<p><span style="color: #000000;">Calling external programs via Auto stop actions (see &sect; 4.6 “Timer and test duration preferences” p.23).</span></p>
+<p><span style="color: #000000;">Maintaining multiple test configurations (see &sect; 8.1 “Maintaining multiple test configurations” p.35).</span></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+
+</td></tr></table>
+
+</body>
+</html>
