@@ -531,8 +531,8 @@ int check_nfc_module(void)
 
 int set_hdmi_duplicate_mode(int mode)
 {
-	const char *hdmi_duplicate_mode[2] = {"xrandr --auto --output eEP-1 --pos 0x0 --mode 800x1280 --output HDMI-1 --same-as eDP-1", 
-		"xrandr --auto --output eEP-1 --pos 0x0 --mode 800x1280 --output HDMI-1 --mode 1920x1080 --left-of eDP-1"};
+	const char *hdmi_duplicate_mode[2] = {"xrandr --auto --output eDP-1 --pos 0x0 --mode 800x1280 --output HDMI-1 --same-as eDP-1", 
+		"xrandr --auto --output eDP-1 --pos 0x0 --mode 800x1280 --output HDMI-1 --mode 1920x1080 --left-of eDP-1"};
 	int ret = 0;
 		
 	if (mode < sizeof(hdmi_duplicate_mode)/sizeof(const char *)) {
